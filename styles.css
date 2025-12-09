@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #160d08;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(165, 165, 165);
+}
+
+
+.main{
+    position: relative;
+    left: 500px;
+    top: 200px;
+    border-radius: 12px;
+    height: 300px;
+    width: 400px;
+    background-color: rgba(110, 110, 110, 0.225);
+    margin: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 22px rgba(209, 57, 57, 0.13);
+    transition: transform 0.6s ease-in-out, animation 0.3s ease-in-out;
+}
+
+.main:hover{
+    transform: scale(1.1);
+    animation: animation 3s ease-in-out infinite;
+}
+
+.main h2{
+    margin: 10px;
+}
+
+.hidden{
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.main:hover .hidden{
+    opacity: 1 ;
+}
+.main p{
+    margin: 20px;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+}
+
+@keyframes animation{
+    0%{
+        box-shadow: 0 20px 22px rgba(255, 0, 0, 0.582);
+    }
+
+    25%{
+        box-shadow: 0 20px 22px rgba(89, 255, 0, 0.3);
+    }
+
+    60% {
+        box-shadow: 0 20px 22px rgba(47, 0, 255, 0.3);
+    }
+
+    95%{
+        box-shadow: 0 20px 22px rgba(255, 0, 0, 0.582);
+    }
+}
